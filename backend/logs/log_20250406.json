@@ -1,0 +1,6 @@
+{"timestamp":"2025-04-06T10:28:55.100Z","ip":"::1","userId":null,"method":"POST","url":"/receipt/parse","statusCode":401,"responseTime":"11ms"}
+{"timestamp":"2025-04-06T10:35:55.957Z","ip":"::1","userId":null,"method":"POST","url":"/receipt/parse","statusCode":401,"responseTime":"21ms"}
+{"timestamp":"2025-04-06T10:36:13.643Z","ip":"::1","userId":null,"method":"POST","url":"/auth/register","statusCode":409,"responseTime":"288ms"}
+{"timestamp":"2025-04-06T10:36:25.623Z","ip":"::1","userId":null,"method":"POST","url":"/auth/register","statusCode":201,"responseTime":"69ms"}
+{"timestamp":"2025-04-06T10:36:40.863Z","ip":"::1","userId":null,"method":"POST","url":"/auth/login","statusCode":200,"responseTime":"64ms"}
+{"timestamp":"2025-04-06T10:37:10.690Z","ip":"::1","userId":null,"method":"POST","url":"/receipt/parse","statusCode":500,"responseTime":"8ms"}
