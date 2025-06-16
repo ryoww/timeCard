@@ -1,7 +1,13 @@
 import express, { Request, Response } from "express";
 import cors from "cors";
 import { createServer } from "http";
+import dotenv from "dotenv";
 import { prismaClient } from "./prisma";
+import loggingMiddleware from "./middlewares/logger.middleware";
+import authRouter from "./routers/auth.router";
+import timecardRouter from "./routers/timecard.router";
+
+dotenv.config();
 
 if (!process.env.PORT) {
     throw new Error("PORT environment variable is not set");
@@ -13,6 +19,7 @@ const app = express();
 const httpServer = createServer(app);
 
 app.use(express.json());
+app.use(loggingMiddleware());
 app.use(
     cors({
         origin: process.env.CORS_ORIGIN || "*",
@@ -23,6 +30,9 @@ app.use(
 app.get("/", (req: Request, res: Response) => {
     res.send("online");
 });
+
+app.use("/auth", authRouter);
+app.use("/timecards", timecardRouter);
 
 app.set("trust proxy", true);
 
