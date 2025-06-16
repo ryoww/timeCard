@@ -1,4 +1,0 @@
-{"timestamp":"2025-04-02T17:29:31.497Z","ip":"::1","userId":null,"method":"POST","url":"/register","statusCode":404,"responseTime":"2ms"}
-{"timestamp":"2025-04-02T17:30:18.493Z","ip":"::1","userId":null,"method":"POST","url":"/auth/register","statusCode":500,"responseTime":"3ms"}
-{"timestamp":"2025-04-02T17:33:41.987Z","ip":"::1","userId":null,"method":"POST","url":"/auth/register","statusCode":201,"responseTime":"216ms"}
-{"timestamp":"2025-04-02T17:40:55.892Z","ip":"::1","userId":null,"method":"POST","url":"/auth/login","statusCode":200,"responseTime":"205ms"}
