@@ -30,16 +30,6 @@ class authService {
                 },
             });
 
-            await prismaClient.category.createMany({
-                data: [
-                    { name: "食費", type: "EXPENSE", userId: user.id },
-                    { name: "交通費", type: "EXPENSE", userId: user.id },
-                    { name: "日用品", type: "EXPENSE", userId: user.id },
-                    { name: "給料", type: "INCOME", userId: user.id },
-                    { name: "投資収入", type: "INCOME", userId: user.id },
-                    { name: "仕送り", type: "INCOME", userId: user.id },
-                ],
-            });
 
             return sendSuccessResponse(res, "CREATED", {
                 data: { id: user.id },
